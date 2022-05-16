@@ -8,6 +8,10 @@ form {
   margin: 20px;
 }
 
+h3 {
+  margin: 20px;
+}
+
 .main-container {
   display: flex;
   flex-direction: row;
@@ -22,8 +26,7 @@ form {
 /* Left side*/
 .splash-screen {
   flex: 1;
-  height: 100%;
-  width: 33%;
+  height: 100vh;
 }
 
 /* Right Side*/
@@ -32,11 +35,22 @@ form {
   display: flex;
 }
 
-.login-info {
-  background-color: rgb(201, 201, 201);
+.intro-text {
+  background-color: rgb(238, 238, 238);
+  font-size: 30px;
+  padding: 100px 100px 20px;
+}
+
+.login-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  grid-template-rows: repeat(3, 80px);
+  grid-gap: 0px 50px;
 }
 
 .login-button-window {
+  background-color: rgb(238, 238, 238);
+  margin: 20px;
 }
 
 .login-button {
